@@ -3,7 +3,9 @@
 A demonstration of the depth-first search algorithm. The demo covers an iterative and a recursive implementation, both
 in the Ruby language.
 
-## Definition
+## Overview
+
+### Definition
 
 **Depth-First Search (DFS)** is an algorithm used to traverse or search through a graph or tree data structure. The
 algorithm starts at a selected node and explores as far as possible along each branch before backtracking.
@@ -12,7 +14,7 @@ To illustrate at a high-level, **DFS** works like a person exploring a maze by f
 end, then backtracking to the last choice point and trying a different path.
 This process continues until all paths have been explored.
 
-## Use-cases
+### Use-cases
 
 DFS is useful in software development for various reasons:
 
@@ -44,7 +46,7 @@ DFS is useful in software development for various reasons:
 
     DFS is used to traverse trees, such as binary trees or N-ary trees, in various algorithms and data structures.
 
-## Limitations
+### Limitations
 
 1.  **Finding Shortest Paths**
 
@@ -77,3 +79,32 @@ DFS is useful in software development for various reasons:
     While DFS has a time complexity of O(V + E) (where V is the number of vertices and E is the number of edges), its
     space complexity can be high in certain cases, especially in recursive implementations where the call stack can grow
     significantly.
+
+## Examples
+
+Too abstract?  Let's look at a couple of examples to make the algorithm concrete.
+
+### Problem #1: Tree Traversal
+
+You have a directory structure on your computer, represented as a tree 🌳 (Use-case #6, above). You want to find all files
+with a specific extension (e.g., `.txt`) starting from a given directory.
+
+```sh
+root
+├── dir1
+│   ├── file1.txt
+│   ├── file2.pdf
+│   └── dir2
+│       └── file3.txt
+└── dir3
+    └── file4.txt
+```
+
+So, start DFS from the `root` directory, and for each directory (node):
+
+*   If it is a file with the desired extension, add it to the result.
+*   If it is a directory, recursively apply DFS to its children.
+
+### Problem #2: Show What You Know!
+
+Try out tree traversal just like Problem #1, except this time you are traversing a JSON-like structure.
