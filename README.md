@@ -3,6 +3,20 @@
 A demonstration of the depth-first search algorithm. The demo covers an iterative and a recursive implementation, both
 in the Ruby language.
 
+## Get Started
+
+To run the functional code:
+
+```sh
+ruby ./functional/main.rb
+```
+
+To run the object-oriented code:
+
+```sh
+ruby ./object-oriented/main.rb
+```
+
 ## Overview
 
 ### Definition
