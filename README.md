@@ -1,7 +1,14 @@
-# Depth-First Search (Demo)
-
-A demonstration of the depth-first search algorithm. The demo covers an iterative and a recursive implementation, both
-in the Ruby language.
+<div align="center">
+  <h1 align="center">Depth-First Search</h1>
+  <p align="center">
+    A demonstration of the depth-first search algorithm. The demo covers an iterative and a recursive implementation,
+    both in the Ruby language.
+  </p>
+  <br />
+  <img src="../assets/logo.png?raw=true" alt="A visual representation of depth-first search" width="300" />
+  <br />
+  <br />
+</div>
 
 ## Get Started
 
